@@ -20,8 +20,14 @@ void setup() {
   // put your setup code here, to run once:
   CircuitPlayground.begin();
   Serial.begin(9600);
+  
+  // Pin A0 represent understandSwitch = "I understand"
   pinMode(12, INPUT_PULLUP);
+
+  // Pin A1 represent confusedSwitch = "I’m confused, keep explaining"
   pinMode(6, INPUT_PULLUP);
+
+  // Pin A2 represent helpSwitch = "I need help"
   pinMode(9, INPUT_PULLUP);
 
 }
